@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+  }
+  
+  h1, h2 {
+    color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
+    text-align: center;
+  }
+  
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate; /* Cambiar a 'separate' para permitir bordes redondeados */
+    border-spacing: 0; /* Eliminar el espacio entre bordes */
+    border-radius: 8px; /* Bordes redondeados para la tabla */
+    overflow: hidden; /* Asegurar que los bordes redondeados se apliquen correctamente */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #fff; /* Cambiar el color del texto a blanco */
+  }
+  
+  th {
+    background-color: #333; /* Fondo oscuro para el encabezado */
+  }
+  
+  a {
+    color: #1abc9c; /* Color verde para los enlaces */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px; /* Bordes redondeados para el formulario */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Color del texto del label */
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button, .button {
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #1abc9c, #16a085); /* Gradiente verde */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  button:hover, .button:hover {
+    background: linear-gradient(45deg, #fff700, #ff8c00); /* Invertir gradiente al pasar el ratón */
+  }
+  
+  .center-button {
+    text-align: center;
+    margin: 20px 0;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmar Eliminación</title>
+<link rel="stylesheet" href="/styles.css"> <!-- Incluir el archivo CSS GLOBAL -->
+<style>
+  .confirmation-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .confirmation-container p {
+    color: #333;
+  }
+  .button-group {
+    margin-top: 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px; /* Asegura que ambos botones tengan el mismo ancho */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .button-delete {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+  }
+  .button-cancel {
+    padding: 10px 15px;
+    background-color: white;
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="confirmation-container">
+  <h1>Confirmar Eliminación</h1>
+  <p>¿Estás seguro de que deseas eliminar al usuario <strong><%= user.name %></strong> con el correo <strong><%= user.email %></strong>?</p>
+
+  <!-- Formulario para confirmar eliminación -->
+  <form action="/delete/<%= user.id %>" method="post" class="button-group">
+      <button type="submit" class="button button-delete">Eliminar</button>
+      <a href="/" class=" button-cancel">Cancelar</a>
+  </form>
+</div>
+
+</body>
+</html>
